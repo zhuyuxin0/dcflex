@@ -3,6 +3,7 @@ message: "If you use this code or its results, please cite the paper below."
 title: "dcflex: code, data and results for 'Digitized Demand Response: Maximizing Data Center Grid-Interactive Efficiency for Renewable Integration'"
 version: "1.0.0"
 date-released: "2026-09-29"
+doi: "10.5281/zenodo.23032876"
 license: MIT
 repository-code: "https://github.com/zhuyuxin0/dcflex"
 authors:

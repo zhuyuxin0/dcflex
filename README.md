@@ -13,6 +13,7 @@ Khalifa University of Science and Technology, Abu Dhabi, United Arab Emirates
 [![License: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 [![Data and results: CC BY 4.0](https://img.shields.io/badge/results-CC%20BY%204.0-lightgrey.svg)](DATA.md)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](experiments/requirements.txt)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23032876.svg)](https://doi.org/10.5281/zenodo.23032876)
 [![Cite](https://img.shields.io/badge/cite-BibTeX-orange.svg)](#citation)
 
 </div>
@@ -142,5 +143,7 @@ If you use this code, its data or its results, please cite the paper:
   url         = {https://github.com/zhuyuxin0/dcflex}
 }
 ```
+
+The code release reported in the paper is archived on Zenodo: Y. Zhu, *dcflex v1.0*, Zenodo, 2026, doi:[10.5281/zenodo.23032876](https://doi.org/10.5281/zenodo.23032876).
 
 `CITATION.cff` carries the same reference in machine-readable form, so GitHub shows a "Cite this repository" button.
