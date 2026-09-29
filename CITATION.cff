@@ -8,12 +8,14 @@ repository-code: "https://github.com/zhuyuxin0/dcflex"
 authors:
   - family-names: Zhu
     given-names: Yuxin
+    orcid: "https://orcid.org/0009-0007-1607-0379"
 preferred-citation:
   type: report
   title: "Digitized Demand Response: Maximizing Data Center Grid-Interactive Efficiency for Renewable Integration"
   authors:
     - family-names: Zhu
       given-names: Yuxin
+      orcid: "https://orcid.org/0009-0007-1607-0379"
     - family-names: Hammad
       given-names: Mohamed
     - family-names: Alyousuf

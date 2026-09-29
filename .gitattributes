@@ -1,0 +1,2 @@
+# the notebooks embed their figures as images; count them as documentation so the language shown is Python
+*.ipynb linguist-documentation
