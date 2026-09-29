@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this code or its results, please cite the paper below."
+title: "dcflex: code, data and results for 'Digitized Demand Response: Maximizing Data Center Grid-Interactive Efficiency for Renewable Integration'"
+version: "1.0.0"
+date-released: "2026-09-29"
+license: MIT
+repository-code: "https://github.com/zhuyuxin0/dcflex"
+authors:
+  - family-names: Zhu
+    given-names: Yuxin
+preferred-citation:
+  type: report
+  title: "Digitized Demand Response: Maximizing Data Center Grid-Interactive Efficiency for Renewable Integration"
+  authors:
+    - family-names: Zhu
+      given-names: Yuxin
+    - family-names: Hammad
+      given-names: Mohamed
+    - family-names: Alyousuf
+      given-names: Budoor
+    - family-names: Alhammadi
+      given-names: Ghaya
+    - family-names: Almannai
+      given-names: Mohamed
+    - family-names: Guo
+      given-names: Yan
+    - family-names: Bahumaid
+      given-names: Shamma
+  institution:
+    name: "Young Future Energy Leaders (YFEL) Programme 2026, Group 4, Khalifa University of Science and Technology"
+    city: "Abu Dhabi"
+    country: AE
+  year: 2026
+  url: "https://github.com/zhuyuxin0/dcflex"

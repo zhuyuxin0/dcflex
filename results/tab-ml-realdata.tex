@@ -1,0 +1,20 @@
+\multicolumn{6}{@{}l}{\emph{Chilled water: 159 meters at 3 sites}} \\
+B1 High-5-of-10 (rolling) & -- & -- & 4.2 & -- & -- \\
+B2 Rolling regression & -- & -- & 7.2 & -- & -- \\
+B3 Committed regression & 23.7 & $-$12.4 & 16.9 & 14.5 & 30.8 \\
+LightGBM (committed) & 22.8 & $-$12.6 & \cellcolor{keyred!18}22.2 & \cellcolor{keyred!25}20.7 & \cellcolor{keyblue!10}35.8 \\
+MLP (committed) & \cellcolor{keyblue!6}21.2 & \cellcolor{keyblue!7}$-$11.2 & \cellcolor{keyblue!20}11.4 & \cellcolor{keyblue!8}12.6 & \cellcolor{keyblue!20}40.9 \\
+B5 without shape constraints & 22.2 & $-$12.4 & \cellcolor{keyblue!17}12.2 & 13.5 & \cellcolor{keyblue!10}35.8 \\
+B5 physics-guided network & \cellcolor{keyblue!6}21.5 & \cellcolor{keyblue!7}$-$11.1 & \cellcolor{keyblue!26}9.5 & \cellcolor{keyblue!13}11.4 & \cellcolor{keyblue!18}40.3 \\
+MLP, pretrained & \cellcolor{keyblue!7}20.8 & \cellcolor{keyblue!6}$-$11.4 & 17.8 & \cellcolor{keyred!25}20.6 & 32.7 \\
+B5, pretrained & \cellcolor{keyblue!8}20.7 & \cellcolor{keyblue!13}$-$10.2 & \cellcolor{keyblue!18}11.8 & \cellcolor{keyblue!6}13.2 & \cellcolor{keyblue!20}40.9 \\
+\addlinespace\multicolumn{6}{@{}l}{\emph{Electricity: 334 meters at 3 sites}} \\
+B1 High-5-of-10 (rolling) & -- & -- & 3.6 & -- & -- \\
+B2 Rolling regression & -- & -- & 7.3 & -- & -- \\
+B3 Committed regression & 17.3 & $-$1.9 & 16.1 & 20.1 & 70.4 \\
+LightGBM (committed) & 17.8 & $-$2.7 & \cellcolor{keyblue!22}10.2 & \cellcolor{keyblue!23}12.3 & 66.8 \\
+MLP (committed) & 17.1 & \cellcolor{keyblue!11}$-$0.1 & \cellcolor{keyblue!25}9.3 & \cellcolor{keyblue!24}12.0 & 67.4 \\
+B5 without shape constraints & 17.1 & $-$1.3 & \cellcolor{keyblue!25}9.3 & \cellcolor{keyblue!26}11.3 & 66.5 \\
+B5 physics-guided network & 17.9 & \cellcolor{keyblue!6}$-$0.9 & \cellcolor{keyblue!24}9.8 & \cellcolor{keyblue!26}11.5 & 66.5 \\
+MLP, pretrained & 18.0 & \cellcolor{keyblue!8}$-$0.6 & \cellcolor{keyblue!16}11.7 & \cellcolor{keyblue!20}13.5 & 65.3 \\
+B5, pretrained & 17.9 & \cellcolor{keyblue!7}0.9 & \cellcolor{keyblue!24}9.8 & \cellcolor{keyblue!24}12.0 & 66.2 \\

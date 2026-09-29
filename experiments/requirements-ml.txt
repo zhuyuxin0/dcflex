@@ -1,0 +1,6 @@
+# ML extension (run_ml.py): CPU builds are enough; the networks have about 11,000 parameters
+torch>=2.3
+lightgbm>=4.3
+scikit-learn>=1.4    # LightGBM's scikit-learn interface
+pyarrow>=15          # parquet caches of BDG2
+chronos-forecasting>=2.0   # Chronos-Bolt zero-shot workload forecasts (run_ml.py mpc); model weights from Hugging Face on first use

@@ -1,0 +1,24 @@
+def canonical(obj):
+    return json.dumps(obj, sort_keys=True, separators=(",", ":")).encode()
+
+
+def sha(b):
+    return hashlib.sha256(b).hexdigest()
+
+
+def commit(event_id, t_commit, window, baseline, model_bytes, feature_bytes, nonce=None):
+    rec = {"event_id": event_id, "t_commit": t_commit, "window": [int(w) for w in window],
+           "baseline_mw": [round(float(x), 4) for x in baseline],
+           "model_sha256": sha(model_bytes), "features_sha256": sha(feature_bytes),
+           "nonce": nonce or os.urandom(32).hex()}
+    return sha(canonical(rec)), rec
+
+
+def verify(c, rec, model_bytes, feature_bytes, recompute=None, atol=1e-3):
+    ok = (sha(canonical(rec)) == c and rec["model_sha256"] == sha(model_bytes)
+          and rec["features_sha256"] == sha(feature_bytes))
+    ok = ok and len(rec["baseline_mw"]) == len(rec["window"])
+    if ok and recompute is not None:
+        b, ref = np.asarray(recompute(), float), np.asarray(rec["baseline_mw"], float)
+        ok = b.shape == ref.shape and bool(np.allclose(b, ref, atol=atol))
+    return ok

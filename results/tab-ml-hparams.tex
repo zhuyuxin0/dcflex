@@ -1,0 +1,18 @@
+B5 network & Calendar input & hour and weekday one-hot (31) \\
+ & Base network & 2 hidden layers of 32, SiLU, softplus output \\
+ & Hinge knots (dry bulb) & 0--55 $^\circ$C every 2.5 \\
+ & Hinge knots (dew point) & $-$10--30 $^\circ$C every 2.5 \\
+ & Hinge softness $s$; initial $a_k$ & 1.5 K; $-$8 \\
+Training & Ensemble; optimizer & 5 seeds (synthetic), 3 (buildings); Adam, full batch, cosine schedule \\
+ & Epochs; learning rate & 1500 (synthetic), 800 (buildings); 0.003 (5$\times$ for $a_k$, $r_0$, $c_0$, $\beta$) \\
+ & Weight decay; hinge penalty & 0.0001; 0.001 \\
+ & Early stopping & best epoch on the last 15\% of the training days \\
+Ablations & Unconstrained MLP & 2 hidden layers of 64, same inputs \\
+ & LightGBM & 600 trees, learning rate 0.03, 31 leaves \\
+Pretraining & Embedding; base network & 16 dimensions; 2 hidden layers of 64 \\
+ & Epochs; batch; learning rate & 6; 16384 rows; 0.002 (10$\times$ for embeddings and hypernetwork), one-cycle \\
+ & Loss & Huber ($\delta=0.5$) + 0.001 $\times$ hinge penalty \\
+Adaptation & Fitted; epochs; learning rate & embedding only; 600; 0.02, 4 restarts \\
+MPC & Horizon; re-planning & 24 h; every hour \\
+ & Bias correction; error samples & 30 days; same hour $\pm$2 h \\
+ & Conformal margin & risk level $\alpha\in\{0.2, 0.1\}$, same 30-day window \\

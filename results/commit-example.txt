@@ -1,0 +1,22 @@
+{
+ "event_id": "AD-DR-2025-08-15",
+ "t_commit": "2025-08-14T12:00:00+04:00",
+ "window": [
+  5443,
+  5444,
+  5445,
+  5446
+ ],
+ "baseline_mw": [
+  90.3093,
+  94.885,
+  88.6974,
+  109.0011
+ ],
+ "model_sha256": "9f6f21ac120f4297ab0a8f78300e69560e10b299b5808bd6e5d5ee480f74d95e",
+ "features_sha256": "4b0917f7a03a49c637391c1fea86655f8c336dadf2adb88ed3147bbf8d45afd9",
+ "nonce": "3d4e7826a252bbd4414941a73100675ce879b3161fb9e6b3fdbb1c59abbe30dc"
+}
+
+C = SHA-256(canonical record) =
+716aaf3829695ff8e52445622237d9f6d2a0b060a0218655df1619c7ef4a1c67

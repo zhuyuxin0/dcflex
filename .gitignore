@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ipynb_checkpoints/
+experiments/out/
+experiments/data/raw/
+experiments/data/alibaba_jobs*.csv
+experiments/data/ercot_hb_west.csv
+.DS_Store
